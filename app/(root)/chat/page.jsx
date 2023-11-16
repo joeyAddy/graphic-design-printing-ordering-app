@@ -234,6 +234,44 @@ export default function ChatWidget() {
     onClose: () => alert("Wait! Don't leave :("),
   };
 
+  const customActions = {
+    Download: (message) => {
+      if (message.attachments.length > 0) {
+        axios({
+          url: message.attachments[0].image_url,
+          method: "GET",
+          responseType: "blob",
+        })
+          .then(async (response) => {
+            console.log("====================================");
+            console.log(response);
+            console.log("====================================");
+
+            // create file link in browser's memory
+            const href = URL.createObjectURL(response.data);
+
+            // create "a" HTML element with href to file & click
+            const link = document.createElement("a");
+            link.href = href;
+            link.setAttribute("download", "design.png"); //or any other extension
+            document.body.appendChild(link);
+            link.click();
+
+            // clean up "a" element & remove ObjectURL
+            document.body.removeChild(link);
+            URL.revokeObjectURL(href);
+          })
+          .catch((error) => {
+            console.log("====================================");
+            console.log(error);
+            console.log("====================================");
+          });
+      } else {
+        alert("No Attachement to download.");
+      }
+    },
+  };
+
   return (
     <div className="relative">
       <div ref={ref} />
@@ -344,7 +382,9 @@ export default function ChatWidget() {
                           <Window>
                             <ChannelHeader />
                             <div className="!bg-gray-500 max-h-[60vh]">
-                              <MessageList />
+                              <MessageList
+                                customMessageActions={customActions}
+                              />
                             </div>
                             <MessageInput />
                           </Window>
