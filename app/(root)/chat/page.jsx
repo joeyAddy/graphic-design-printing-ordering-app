@@ -109,9 +109,9 @@ export default function ChatWidget() {
         {
           name: `${chatProfile.name}`,
           members:
-            chatProfile.id === "106840650439188500036"
+            chatProfile.id === "110327416125539799158"
               ? [chatProfile.id]
-              : [chatProfile.id, "106840650439188500036"],
+              : [chatProfile.id, "110327416125539799158"],
           image:
             chatProfile?.image !== null
               ? chatProfile?.image
@@ -381,7 +381,7 @@ export default function ChatWidget() {
                         <Channel>
                           <Window>
                             <ChannelHeader />
-                            <div className="!bg-gray-500 max-h-[60vh]">
+                            <div className="max-h-[60vh] pt-12">
                               <MessageList
                                 customMessageActions={customActions}
                               />
