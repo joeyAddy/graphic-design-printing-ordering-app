@@ -84,7 +84,7 @@ const Navbar = () => {
                 width={150}
                 height={20}
                 alt="logo"
-                className="aspect-auto object-cover"
+                className="aspect-auto"
               />
             </span>
           </a>
