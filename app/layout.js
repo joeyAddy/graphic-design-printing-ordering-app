@@ -4,6 +4,7 @@ import "tw-elements/dist/css/tw-elements.min.css";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import { ContextProvider } from "../context/index";
+import { Providers } from "@/providers/NextUIProvider";
 
 const barlow = Barlow({
   subsets: ["latin"],
@@ -20,9 +21,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${barlow.className} relative`}>
         <ContextProvider>
-          <Navbar />
-          {children}
-          <Footer />
+          <Providers>
+            <Navbar />
+            {children}
+            <Footer />
+          </Providers>
         </ContextProvider>
       </body>
     </html>

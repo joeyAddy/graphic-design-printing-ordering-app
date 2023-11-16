@@ -38,7 +38,7 @@ const Templates = () => {
           <div className="w-full md:mt-24">
             <img
               src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948578/8945323_4031914_xzl0a5.jpg"
-              data-te-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948578/8945323_4031914_xzl0a5.jpg"
               alt="Dark Roast Iced Coffee"
               className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
             />
@@ -57,7 +57,7 @@ const Templates = () => {
           <div className="w-full mt-5">
             <img
               src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948578/1016368_OJK9410_mcpebk.jpg"
-              data-te-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
+              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948578/1016368_OJK9410_mcpebk.jpg"
               alt="Table Full of Spices"
               className="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
             />
@@ -74,7 +74,7 @@ const Templates = () => {
           <div className="w-full">
             <img
               src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948581/21742871_6494056_ztlwjz.jpg"
-              data-te-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
+              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948581/21742871_6494056_ztlwjz.jpg"
               alt="Coconut with Strawberries"
               className="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
             />
@@ -94,7 +94,7 @@ const Templates = () => {
           <div className="w-full mt-5">
             <img
               src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948587/9411715_3619_dbz1ec.jpg"
-              data-te-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
+              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948587/9411715_3619_dbz1ec.jpg"
               alt="Table Full of Spices"
               className="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
             />
@@ -111,7 +111,7 @@ const Templates = () => {
           <div className="w-full">
             <img
               src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948584/10705525_18935515_gsjrhu.jpg"
-              data-te-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
+              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948584/10705525_18935515_gsjrhu.jpg"
               alt="Coconut with Strawberries"
               className="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
             />
@@ -131,9 +131,9 @@ const Templates = () => {
           <div className="w-full md:mt-24">
             <img
               src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948576/2525027_340264-PB2BNE-82_w9flgk.jpg"
-              data-te-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948576/2525027_340264-PB2BNE-82_w9flgk.jpg"
               alt="Dark Roast Iced Coffee"
-              className=" w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
             />
             <button
               onClick={() =>

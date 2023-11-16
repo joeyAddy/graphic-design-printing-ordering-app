@@ -9,13 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/react": "^2.2.9",
     "axios": "^1.6.1",
     "firebase": "^10.5.2",
+    "framer-motion": "^10.16.5",
+    "lottie-web": "^5.12.2",
     "next": "14.0.1",
     "npm": "^10.2.3",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.11.0",
+    "react-paystack": "^4.0.3",
     "stream-chat": "^8.14.1",
     "stream-chat-react": "^10.18.0",
     "tw-elements": "^1.0.0"

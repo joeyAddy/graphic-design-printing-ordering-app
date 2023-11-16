@@ -2,9 +2,12 @@
 import { Context } from "@/context";
 import { auth } from "@/firebase-config";
 import { signOut } from "firebase/auth";
+import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useContext, useState } from "react";
 import { useEffect } from "react";
+import logo from "@/assets/images/EDYgraphicS.png";
 
 const Navbar = () => {
   const router = useRouter();
@@ -43,7 +46,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="sticky z-[9999] top-0 right-0 left-0 flex w-full items-center justify-between bg-white py-6 shadow-sm shadow-neutral-700/10 dark:bg-neutral-800 dark:shadow-black/30 lg:flex-wrap lg:justify-start"
+      className="sticky z-[50] top-0 right-0 left-0 flex w-full items-center justify-between bg-white py-6 shadow-sm shadow-neutral-700/10 dark:bg-neutral-800 dark:shadow-black/30 lg:flex-wrap lg:justify-start"
       data-te-navbar-ref
     >
       <div className="flex w-full flex-wrap items-center justify-between px-6">
@@ -76,20 +79,13 @@ const Navbar = () => {
           {/* <!-- Navbar brand --> */}
           <a className="text-primary dark:text-primary-400" href="/">
             <span className="[&>svg]:ml-2 [&>svg]:mr-3 [&>svg]:h-6 [&>svg]:w-6 [&>svg]:lg:ml-0 flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
-                />
-              </svg>
-              <p className="text-xl font-extrabold">Eddy Graphics</p>
+              <Image
+                src={logo.src}
+                width={150}
+                height={20}
+                alt="logo"
+                className="aspect-auto object-cover"
+              />
             </span>
           </a>
         </div>
@@ -126,17 +122,6 @@ const Navbar = () => {
             <li className="mb-2 lg:mb-0" data-te-nav-item-ref>
               <a
                 className="block text-lg py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 hover:-translate-y-1 focus:text-blue-700 focus:underline focus:underline-offset-8 focus:und disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
-                href="/products"
-                data-te-nav-link-ref
-                data-te-ripple-init
-                data-te-ripple-color="light"
-              >
-                Products
-              </a>
-            </li>
-            <li className="mb-2 lg:mb-0" data-te-nav-item-ref>
-              <a
-                className="block text-lg py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 hover:-translate-y-1 focus:text-blue-700 focus:underline focus:underline-offset-8 focus:und disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
                 href="/design-templates"
                 data-te-nav-link-ref
                 data-te-ripple-init
@@ -153,7 +138,7 @@ const Navbar = () => {
                 data-te-ripple-init
                 data-te-ripple-color="light"
               >
-                About Us
+                About us
               </a>
             </li>
             <li className="mb-2 lg:mb-0" data-te-nav-item-ref>
@@ -164,7 +149,7 @@ const Navbar = () => {
                 data-te-ripple-init
                 data-te-ripple-color="light"
               >
-                Contacy us
+                Contact us
               </a>
             </li>
           </ul>
@@ -183,11 +168,11 @@ const Navbar = () => {
               Sign In
             </button>
           ) : (
-            <>
+            <div className="flex items-center space-x-3">
               <div
                 data-te-chip-init
                 data-te-ripple-init
-                className="[word-wrap: break-word]  my-[5px] mr-4 flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-[#eceff1] px-[12px] py-0 text-[13px] font-normal normal-case leading-loose text-[#4f4f4f] shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] dark:bg-neutral-600 dark:text-neutral-200"
+                className="[word-wrap: break-word] my-[5px] flex h-[32px] cursor-pointer items-center justify-between rounded-[16px] bg-[#eceff1] px-[12px] py-0 text-[13px] font-normal normal-case leading-loose text-[#4f4f4f] shadow-none transition-[opacity] duration-300 ease-linear hover:!shadow-none active:bg-[#cacfd1] dark:bg-neutral-600 dark:text-neutral-200"
                 data-te-close="true"
               >
                 <img
@@ -197,16 +182,22 @@ const Navbar = () => {
                 />
                 {user[0].displayName || user[0].email}
               </div>
+              <Link
+                href="/chat"
+                className="text-sm border inline-block rounded-full px-6 py-1 font-medium leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:text-primary-400 dark:hover:bg-neutral-700 dark:hover:bg-opacity-60 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+              >
+                Messenger
+              </Link>
               <button
                 type="button"
                 onClick={handleSignOut}
-                className="mr-2 text-sm inline-block rounded px-6 pt-2.5 pb-2 font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:text-primary-400 dark:hover:bg-neutral-700 dark:hover:bg-opacity-60 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+                className="text-sm inline-block border rounded-full px-6 py-1 font-medium leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:text-primary-400 dark:hover:bg-neutral-700 dark:hover:bg-opacity-60 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
                 data-te-ripple-init
                 data-te-ripple-color="light"
               >
                 {isLoading ? "Signing out.." : "Sign out"}
               </button>
-            </>
+            </div>
           )}
         </div>
       </div>

@@ -79,7 +79,8 @@ const Login = () => {
           "user",
           JSON.stringify(response.user.providerData)
         );
-        router.push("/chat");
+        router.prefetch("/chat");
+        window.location.href = "/chat";
       }
     } catch (error) {
       console.log(error);
