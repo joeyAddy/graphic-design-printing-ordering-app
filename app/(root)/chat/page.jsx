@@ -85,7 +85,9 @@ export default function ChatWidget() {
       id: user[0]?.uid,
       name:
         user[0]?.displayName !== null ? user[0]?.displayName : user[0]?.email,
-      image: user[0]?.photoURL,
+      image:
+        user[0]?.photoURL ||
+        "https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg",
     });
     console.log("====================================");
     console.log(user, "user");
@@ -105,15 +107,15 @@ export default function ChatWidget() {
         "messaging",
         `order-discussions-${chatProfile?.id}`,
         {
-          name: `${chatProfile.name} Channel`,
+          name: `${chatProfile.name}`,
           members:
             chatProfile.id === "106840650439188500036"
               ? [chatProfile.id]
               : [chatProfile.id, "106840650439188500036"],
           image:
-            chatProfile?.photoURL !== null
-              ? chatProfile?.photoURL
-              : "https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699006441/casual-young-african-man-smiling-isolated-white_a3qpee.jpg",
+            chatProfile?.image !== null
+              ? chatProfile?.image
+              : "https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg",
         }
       );
 
