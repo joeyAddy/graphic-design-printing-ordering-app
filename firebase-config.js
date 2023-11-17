@@ -5,6 +5,7 @@ import {
   getAuth,
   GoogleAuthProvider,
   TwitterAuthProvider,
+  PhoneAuthProvider,
 } from "firebase/auth";
 
 const firebaseConfig = {
@@ -23,3 +24,4 @@ export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider();
 export const twitterProvider = new TwitterAuthProvider();
 export const facebookProvider = new FacebookAuthProvider();
+export const phoneProvider = new PhoneAuthProvider();

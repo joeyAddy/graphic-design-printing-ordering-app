@@ -82,9 +82,13 @@ export default function ChatWidget() {
       return;
     }
     setChatProfile({
-      id: user[0]?.uid,
+      id: String(user[0]?.uid).replace(/\+/g, ""),
       name:
-        user[0]?.displayName !== null ? user[0]?.displayName : user[0]?.email,
+        user[0]?.displayName !== null
+          ? user[0]?.displayName
+          : user[0]?.email !== null
+          ? user[0]?.email
+          : user[0]?.phoneNumber,
       image:
         user[0]?.photoURL ||
         "https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg",
