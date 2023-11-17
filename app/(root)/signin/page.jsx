@@ -5,7 +5,6 @@ import {
   facebookProvider,
   googleProvider,
   twitterProvider,
-  phoneProvider,
 } from "@/firebase-config";
 import {
   RecaptchaVerifier,
