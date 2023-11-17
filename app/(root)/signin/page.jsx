@@ -12,17 +12,19 @@ import {
   signInWithPopup,
 } from "firebase/auth";
 import { Context } from "@/context";
-import { FaGoogle } from "react-icons/fa";
+import { FaGoogle, FaSpinner } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 
 const Login = () => {
-  const { setUser } = useContext(Context);
+  const { setUser, user } = useContext(Context);
 
   const [phone, setPhone] = useState("+234");
   const [otp, setOtp] = useState("");
   const [userPhoneData, setUserPhoneData] = useState("");
   const [optMessage, setOptMessage] = useState("");
   const [verifyMessage, setVerifyMessage] = useState("");
+  const [loadingOTP, setLoadingOTP] = useState(false);
+  const [verifying, setVerifying] = useState(false);
 
   const router = useRouter();
 
@@ -33,6 +35,12 @@ const Login = () => {
     };
     init();
   }, []);
+
+  useEffect(() => {
+    if (user) {
+      router.replace("/chat");
+    }
+  }, [user]);
 
   const handleSignUpWithGoogle = async () => {
     try {
@@ -100,6 +108,7 @@ const Login = () => {
   const handleSignWithPhoneNumber = (e) => {
     e.preventDefault();
     if (phone === "" || phone.length < 10) return;
+    setLoadingOTP(true);
 
     let recaptcha = new RecaptchaVerifier(auth, "recaptcha", {});
     signInWithPhoneNumber(auth, `${phone}`, recaptcha)
@@ -108,10 +117,13 @@ const Login = () => {
         console.log(result);
         console.log("====================================");
         setUserPhoneData(result);
+        setLoadingOTP(false);
         setOptMessage("OTP has been successfully sent");
         // window.location.href = "/chat";
       })
       .catch((err) => {
+        setLoadingOTP(false);
+        window.location.reload;
         console.log(err);
         // window.location.reload();
       });
@@ -120,6 +132,7 @@ const Login = () => {
   const handleVerifyOTP = async (e) => {
     e.preventDefault();
     if (userPhoneData === "") return;
+    setVerifying(true);
     try {
       const data = await userPhoneData.confirm(otp);
       console.log("====================================");
@@ -127,12 +140,15 @@ const Login = () => {
       console.log("====================================");
 
       setUser(data.user.providerData);
+      setVerifying(false);
       setVerifyMessage("OTP Verified");
 
       localStorage.setItem("user", JSON.stringify(data.user.providerData));
       router.prefetch("/chat");
       window.location.href = "/chat";
     } catch (error) {
+      setVerifying(false);
+
       console.log(error);
     }
   };
@@ -233,7 +249,11 @@ const Login = () => {
                     data-te-ripple-init
                     data-te-ripple-color="light"
                   >
-                    Send OTP
+                    {loadingOTP === true ? (
+                      <FaSpinner className="animate-spin mx-auto" />
+                    ) : (
+                      " Send OTP"
+                    )}
                   </button>
                 </div>
               </div>
@@ -271,7 +291,11 @@ const Login = () => {
                     data-te-ripple-init
                     data-te-ripple-color="light"
                   >
-                    Verify OTP
+                    {verifying === true ? (
+                      <FaSpinner className="animate-spin mx-auto" />
+                    ) : (
+                      "Verify OTP"
+                    )}
                   </button>
                 </div>
                 {verifyMessage && (
