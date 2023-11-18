@@ -109,7 +109,7 @@ const Footer = () => {
       >
         © 2023 Copyright:
         <a className="text-white" href="https://tw-elements.com/">
-          Eddy Graphics, Inc.
+          Edygraphics, Inc.
         </a>
       </div>
     </footer>

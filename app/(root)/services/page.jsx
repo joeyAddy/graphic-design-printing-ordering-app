@@ -25,21 +25,6 @@ const Services = () => {
         <div className="flex-1 h-fit grid md:grid-cols-4 gap-6">
           <ServiceCard
             image={image}
-            title={"Finishing"}
-            text="With our in-house finishing service, we can keep a tight grip on quality and deadlines for your project. Our broad range of finishing products includes folding, collating, laminating, foiling, and perforating. We also offer a range of binding options like hard and soft binding, case binding, saddle stitching, PUR binding, and Wiro binding. "
-          />
-          <ServiceCard
-            image={image}
-            title={"Packing and Delivery"}
-            text="A job well done needs to be a job well delivered. Making sure that you receive your high-quality product in due time is our priority. We have a fleet of drivers and riders, who can deliver your order within London on time. However, if you are based outside of London we can use an overnight courier."
-          />
-          <ServiceCard
-            image={image}
-            title={"Student Printing"}
-            text="We are the most experienced specialists in printing thesis and dissertations for students offering binding service on our large format HP printer which is also perfect for high-quality posters. We offer the fastest and most reliable poster printing service within London, with collection time, within an hour. "
-          />
-          <ServiceCard
-            image={image}
             title={"GRAPHIC DESIGNS"}
             text="We are the most experienced specialists in printing thesis and dissertations for students offering binding service on our large format HP printer which is also perfect for high-quality posters. We offer the fastest and most reliable poster printing service within London, with collection time, within an hour. "
           />
@@ -62,6 +47,11 @@ const Services = () => {
             image={image}
             title={"Foiling, Embossing, and Die-cutting"}
             text="Adding a little luxury to your printed materials. Our embossing, foil stamping, and die-cutting make your simple project look regal. Perfect for presentation folder, greeting cards, book covers, Letterheads, reports, and everything else.  "
+          />
+          <ServiceCard
+            image={image}
+            title={"Packing and Delivery"}
+            text="A job well done needs to be a job well delivered. Making sure that you receive your high-quality product in due time is our priority. We have a fleet of drivers and riders, who can deliver your order within London on time. However, if you are based outside of London we can use an overnight courier."
           />
         </div>
       </div>

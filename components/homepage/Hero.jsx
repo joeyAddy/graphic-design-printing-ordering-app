@@ -6,7 +6,7 @@ const Hero = () => {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="mt-12 lg:mt-0">
             <h1 className="mt-2 mb-2 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
-              EDDY GRAPHIC AND PRINTING <br />
+              EDYGRAPHIC AND PRINTING <br />
             </h1>
             <span className="text-primary !text-xl mb-12">
               Over 10 years of excellence in producing supreme quality,

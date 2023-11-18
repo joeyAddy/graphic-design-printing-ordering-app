@@ -296,7 +296,7 @@ export default function ChatWidget() {
               data-te-ripple-color="light"
               className="border-2 border-blue-500 rounded-full font-semibold drop-shadow-2xl px-5 py-2 bg-white"
             >
-              Order Now
+              Pay Now
             </button>
             {/* </div> */}
           </PopoverTrigger>

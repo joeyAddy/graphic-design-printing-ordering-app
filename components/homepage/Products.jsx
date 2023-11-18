@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Products = () => {
   return (
-    <div className="min-h-screen p-12">
+    <div className="min-h-screen p-12 bg-neutral-50">
       <div className="flex flex-col w-full">
         <h2 className="text-3xl text-blue-700 font-semibold uppercase">
           Products
@@ -23,7 +23,7 @@ const Products = () => {
       </div>
       <div className="h-12 w-fit ml-auto pl-4 py-4 pr-52 mt-6 bg-blue-700 flex items-center justify-end">
         <Link
-          href="/products"
+          href="/templates"
           className="text-xl text-white font-medium hover:underline underline-offset-4 hover:-translate-y-2 transition-all duration-200 ease-in"
         >
           Learn more

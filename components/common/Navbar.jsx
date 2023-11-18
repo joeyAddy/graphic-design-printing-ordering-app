@@ -81,7 +81,7 @@ const Navbar = () => {
             <span className="[&>svg]:ml-2 [&>svg]:mr-3 [&>svg]:h-6 [&>svg]:w-6 [&>svg]:lg:ml-0 flex items-center">
               <Image
                 src={logo.src}
-                width={150}
+                width={200}
                 height={20}
                 alt="logo"
                 className="aspect-auto"
@@ -95,7 +95,10 @@ const Navbar = () => {
           id="navbarSupportedContentY"
           data-te-collapse-item
         >
-          <ul className="mx-auto lg:flex lg:flex-row" data-te-navbar-nav-ref>
+          <ul
+            className="mx-auto lg:flex lg:flex-row md:space-x-4"
+            data-te-navbar-nav-ref
+          >
             <li data-te-nav-item-ref>
               <a
                 className="block text-lg py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 hover:-translate-y-1 focus:text-blue-700 focus:underline focus:underline-offset-8 focus:und disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
