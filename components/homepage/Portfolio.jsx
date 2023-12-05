@@ -1,6 +1,9 @@
 import Link from "next/link";
 import PortfolioCard from "./PortfolioCard";
-import image from "@/assets/images/hero.jpg";
+import image1 from "@/assets/mockups/edy 13.png";
+import image2 from "@/assets/mockups/edy 44.png";
+import image3 from "@/assets/mockups/edy 21.png";
+import image4 from "@/assets/mockups/edy 51.png";
 
 const Porfolio = () => {
   return (
@@ -8,28 +11,28 @@ const Porfolio = () => {
       <h2 className="text-3xl font-semibold text-center">OUR PORTFOLIO</h2>
       <div className="grid lg:grid-cols-2 gap-4 mt-12">
         <PortfolioCard
-          image={image}
+          image={image1}
           title={"Wedding Stationery"}
           body={
             "Luxurious wedding stationery included custom-designed magnificently printed and majestically finished invitation cards and RSVPs."
           }
         />
         <PortfolioCard
-          image={image}
+          image={image2}
           title={"Book Publishings"}
           body={
             "An extra thick thesis that needed something artistic for the print as exquisite as the lengthy research in its pages."
           }
         />
         <PortfolioCard
-          image={image}
+          image={image3}
           title={"Business Stationery"}
           body={
             "A complete set of business stationery, artfully designed, expertly printed, and masterfully finished for our valued customer."
           }
         />
         <PortfolioCard
-          image={image}
+          image={image4}
           title={"Brochures"}
           body={
             "Product brochure that need to have the richness of color and finish to catch every customer's eye.​"

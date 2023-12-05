@@ -20,6 +20,7 @@
     "react-dom": "^18",
     "react-icons": "^4.11.0",
     "react-paystack": "^4.0.3",
+    "sass": "^1.69.5",
     "stream-chat": "^8.14.1",
     "stream-chat-react": "^10.18.0",
     "tw-elements": "^1.0.0"

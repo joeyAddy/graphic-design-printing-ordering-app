@@ -25,3 +25,28 @@
 .fancy-border-radius {
   border-radius: 53% 47% 52% 48% / 36% 41% 59% 64%;
 }
+
+.str-chat__message-actions-box:not(.str-chat__message-actions-box-angular).str-chat__message-actions-box--mine {
+  inset-block-end: -750% !important;
+  margin-top: 30px !important;
+  inset-inline-start: -500% !important;
+}
+
+@media only screen and (max-width: 480px) { 
+  .str-chat__message-actions-box:not(.str-chat__message-actions-box-angular).str-chat__message-actions-box--mine {
+    inset-block-end: -720% !important;
+    margin-top: 30px !important;
+    inset-inline-start: 100% !important;
+  }
+ }
+
+
+ .header-title {
+  padding: 5px 7px;
+}
+
+.header-pound {
+  color: #006cff;
+  font-weight: 800;
+  padding-right: 2px;
+}

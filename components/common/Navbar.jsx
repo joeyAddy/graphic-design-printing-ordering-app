@@ -171,7 +171,7 @@ const Navbar = () => {
               Sign In
             </button>
           ) : (
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3 gap-y-3 flex-wrap">
               <div
                 data-te-chip-init
                 data-te-ripple-init

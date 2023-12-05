@@ -4,7 +4,13 @@ import { Context } from "@/context";
 import { Tabs, Tab } from "@nextui-org/react";
 import axios from "axios";
 import { useSearchParams } from "next/navigation";
-import { useState, useEffect, useContext, useRef } from "react";
+import {
+  useState,
+  useEffect,
+  useContext,
+  useRef,
+  useLayoutEffect,
+} from "react";
 import { FaSpinner } from "react-icons/fa";
 import { MdMessage, MdHeadphones, MdManageHistory } from "react-icons/md";
 import {
@@ -24,10 +30,13 @@ import {
   Thread,
   LoadingIndicator,
   ChannelList,
+  TypingIndicator,
+  useChannelStateContext,
 } from "stream-chat-react";
 
 import "stream-chat-react/dist/css/v2/index.css";
 import { PaystackButton } from "react-paystack";
+import { CustomMessage } from "@/components/messenger/CustomMessage";
 
 const apiKey = process.env.NEXT_PUBLIC_STREAM_API_KEY;
 const publicKey = process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY;
@@ -56,6 +65,63 @@ export default function ChatWidget() {
     };
     init();
   }, []);
+
+  const Users = () => {
+    const { channel } = useChannelStateContext();
+    const [channelUsers, setChannelUsers] = useState([]);
+
+    useEffect(() => {
+      const updateChannelUsers = () => {
+        setChannelUsers(
+          Object.values(channel.state.members).reduce((count, user) => {
+            if (user.user && user.user.online) {
+              return count + 1;
+            }
+            return count;
+          }, 0)
+        );
+      };
+
+      updateChannelUsers();
+    }, [client, channel]);
+
+    return <span className="text-sm text-gray-500">{channelUsers} online</span>;
+  };
+
+  const CustomChannelHeader = (props) => {
+    const { title } = props;
+
+    const { channel } = useChannelStateContext();
+    const { name, image } = channel.data || {};
+
+    console.log("====================================");
+    console.log(channel);
+    console.log("====================================");
+
+    return (
+      <div className="str-chat__header-livestream ml-4">
+        <div className="flex space-x-2">
+          <div className="h-fit">
+            <img
+              src={String(image)}
+              alt="Avatar"
+              height={30}
+              width={30}
+              className="rounded-full"
+            />
+          </div>
+          <div>
+            <div className="header-item font-semibold">
+              <span className="header-pound">#</span>
+              {title || name}
+            </div>
+            <Users />
+          </div>
+          <TypingIndicator />
+        </div>
+      </div>
+    );
+  };
 
   useEffect(() => {
     import("lottie-web").then((Lottie) => setLottie(Lottie.default));
@@ -384,7 +450,7 @@ export default function ChatWidget() {
                       <div className="col-span-6">
                         <Channel>
                           <Window>
-                            <ChannelHeader />
+                            <CustomChannelHeader />
                             <div className="max-h-[60vh] pt-12">
                               <MessageList
                                 customMessageActions={customActions}

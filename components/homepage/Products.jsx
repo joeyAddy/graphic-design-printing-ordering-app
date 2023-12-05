@@ -1,4 +1,7 @@
-import image from "@/assets/images/hero.jpg";
+import product1 from "@/assets/mockups/edy 28.png";
+import product2 from "@/assets/mockups/edy 18.png";
+import product3 from "@/assets/mockups/edy 1.png";
+import product4 from "@/assets/mockups/edy 47.png";
 import ProductCard from "./ProductCard";
 import Link from "next/link";
 
@@ -16,10 +19,13 @@ const Products = () => {
         </p>
       </div>
       <div className="grid lg:grid-cols-4 gap-4 mt-12">
-        <ProductCard image={image} title={"Bespoke Wedding Stationery"} />
-        <ProductCard image={image} title={"Booklets & Presentation Folders"} />
-        <ProductCard image={image} title={"Business Stationery"} />
-        <ProductCard image={image} title={"Same Day Flyers & Leaflets"} />
+        <ProductCard image={product1} title={"Bespoke Wedding Stationery"} />
+        <ProductCard
+          image={product2}
+          title={"Booklets & Presentation Folders"}
+        />
+        <ProductCard image={product3} title={"Business Stationery"} />
+        <ProductCard image={product4} title={"Same Day Flyers & Leaflets"} />
       </div>
       <div className="h-12 w-fit ml-auto pl-4 py-4 pr-52 mt-6 bg-blue-700 flex items-center justify-end">
         <Link

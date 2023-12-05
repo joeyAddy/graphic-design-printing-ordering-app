@@ -37,34 +37,34 @@ const Templates = () => {
         <div className="flex h-full w-full flex-1 flex-col">
           <div className="w-full md:mt-24">
             <img
-              src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948578/8945323_4031914_xzl0a5.jpg"
-              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948578/8945323_4031914_xzl0a5.jpg"
+              src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721425/edy_46_jw6qbo.png"
+              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721425/edy_46_jw6qbo.png"
               alt="Dark Roast Iced Coffee"
               className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
             />
             <button
               onClick={() =>
                 (window.location.href =
-                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948578/8945323_4031914_xzl0a5.jpg")
+                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721425/edy_46_jw6qbo.png")
               }
               className="w-full text-center bg-blue-500 text-white py-2 font-medium"
             >
-              Choose templated
+              Choose template
             </button>
           </div>
         </div>
         <div className="flex h-full w-full flex-1 flex-col-reverse">
           <div className="w-full mt-5">
             <img
-              src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948578/1016368_OJK9410_mcpebk.jpg"
-              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948578/1016368_OJK9410_mcpebk.jpg"
+              src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721428/edy_52_exf7z4.png"
+              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721428/edy_52_exf7z4.png"
               alt="Table Full of Spices"
               className="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
             />
             <button
               onClick={() =>
                 (window.location.href =
-                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948578/1016368_OJK9410_mcpebk.jpg")
+                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721428/edy_52_exf7z4.png")
               }
               className="w-full text-center bg-blue-500 text-white py-2 font-medium"
             >
@@ -73,15 +73,15 @@ const Templates = () => {
           </div>
           <div className="w-full">
             <img
-              src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948581/21742871_6494056_ztlwjz.jpg"
-              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948581/21742871_6494056_ztlwjz.jpg"
+              src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721421/edy_51_uoez2z.png"
+              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721421/edy_51_uoez2z.png"
               alt="Coconut with Strawberries"
               className="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
             />
             <button
               onClick={() =>
                 (window.location.href =
-                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948581/21742871_6494056_ztlwjz.jpg")
+                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721421/edy_51_uoez2z.png")
               }
               className="w-full text-center bg-blue-500 text-white py-2 font-medium"
             >
@@ -93,15 +93,15 @@ const Templates = () => {
         <div className="flex h-full w-full flex-1 flex-col-reverse">
           <div className="w-full mt-5">
             <img
-              src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948587/9411715_3619_dbz1ec.jpg"
-              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948587/9411715_3619_dbz1ec.jpg"
+              src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721411/edy_39_saoium.png"
+              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721411/edy_39_saoium.png"
               alt="Table Full of Spices"
               className="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
             />
             <button
               onClick={() =>
                 (window.location.href =
-                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948587/9411715_3619_dbz1ec.jpg")
+                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721411/edy_39_saoium.png")
               }
               className="w-full text-center bg-blue-500 text-white py-2 font-medium"
             >
@@ -110,15 +110,15 @@ const Templates = () => {
           </div>
           <div className="w-full">
             <img
-              src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948584/10705525_18935515_gsjrhu.jpg"
-              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948584/10705525_18935515_gsjrhu.jpg"
+              src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721419/edy_49_ti0stg.png"
+              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721419/edy_49_ti0stg.png"
               alt="Coconut with Strawberries"
               className="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
             />
             <button
               onClick={() =>
                 (window.location.href =
-                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948584/10705525_18935515_gsjrhu.jpg")
+                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721419/edy_49_ti0stg.png")
               }
               className="w-full text-center bg-blue-500 text-white py-2 font-medium"
             >
@@ -130,15 +130,15 @@ const Templates = () => {
         <div className="flex h-full w-full flex-1 flex-col">
           <div className="w-full md:mt-24">
             <img
-              src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948576/2525027_340264-PB2BNE-82_w9flgk.jpg"
-              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948576/2525027_340264-PB2BNE-82_w9flgk.jpg"
+              src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721416/edy_45_dfq5jt.png"
+              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721416/edy_45_dfq5jt.png"
               alt="Dark Roast Iced Coffee"
               className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
             />
             <button
               onClick={() =>
                 (window.location.href =
-                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948576/2525027_340264-PB2BNE-82_w9flgk.jpg")
+                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721416/edy_45_dfq5jt.png")
               }
               className="w-full text-center bg-blue-500 text-white py-2 font-medium"
             >
@@ -149,20 +149,20 @@ const Templates = () => {
       </div>
       <div
         data-te-lightbox-init
-        className="flex flex-col space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0 p-6 !pt-0"
+        className="flex flex-col space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0 p-6"
       >
         <div className="flex h-full w-full flex-1 flex-col">
-          <div className="w-full">
+          <div className="w-full md:mt-24">
             <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Vertical/1.webp"
-              data-te-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+              src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721400/edy_26_nycrpz.png"
+              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721400/edy_26_nycrpz.png"
               alt="Dark Roast Iced Coffee"
               className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
             />
             <button
               onClick={() =>
                 (window.location.href =
-                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948578/8945323_4031914_xzl0a5.jpg")
+                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721400/edy_26_nycrpz.png")
               }
               className="w-full text-center bg-blue-500 text-white py-2 font-medium"
             >
@@ -170,18 +170,18 @@ const Templates = () => {
             </button>
           </div>
         </div>
-        <div className="flex h-full w-full flex-1 flex-col">
-          <div className="w-full mb-5">
+        <div className="flex h-full w-full flex-1 flex-col-reverse">
+          <div className="w-full mt-5">
             <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp"
-              data-te-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
+              src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721399/edy_25_ftfvm7.png"
+              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721399/edy_25_ftfvm7.png"
               alt="Table Full of Spices"
               className="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
             />
             <button
               onClick={() =>
                 (window.location.href =
-                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948578/8945323_4031914_xzl0a5.jpg")
+                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721399/edy_25_ftfvm7.png")
               }
               className="w-full text-center bg-blue-500 text-white py-2 font-medium"
             >
@@ -190,15 +190,52 @@ const Templates = () => {
           </div>
           <div className="w-full">
             <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Square/1.webp"
-              data-te-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
+              src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721393/edy_21_k7oi39.png"
+              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721393/edy_21_k7oi39.png"
               alt="Coconut with Strawberries"
               className="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
             />
             <button
               onClick={() =>
                 (window.location.href =
-                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948578/8945323_4031914_xzl0a5.jpg")
+                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721393/edy_21_k7oi39.png")
+              }
+              className="w-full text-center bg-blue-500 text-white py-2 font-medium"
+            >
+              Choose template
+            </button>
+          </div>
+        </div>
+
+        <div className="flex h-full w-full flex-1 flex-col-reverse">
+          <div className="w-full mt-5">
+            <img
+              src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721390/edy_14_sbotsr.png"
+              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721390/edy_14_sbotsr.png"
+              alt="Table Full of Spices"
+              className="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+            />
+            <button
+              onClick={() =>
+                (window.location.href =
+                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721390/edy_14_sbotsr.png")
+              }
+              className="w-full text-center bg-blue-500 text-white py-2 font-medium"
+            >
+              Choose template
+            </button>
+          </div>
+          <div className="w-full">
+            <img
+              src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721389/edy_16_mkmih1.png"
+              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721389/edy_16_mkmih1.png"
+              alt="Coconut with Strawberries"
+              className="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+            />
+            <button
+              onClick={() =>
+                (window.location.href =
+                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721389/edy_16_mkmih1.png")
               }
               className="w-full text-center bg-blue-500 text-white py-2 font-medium"
             >
@@ -208,54 +245,17 @@ const Templates = () => {
         </div>
 
         <div className="flex h-full w-full flex-1 flex-col">
-          <div className="w-full mb-5">
+          <div className="w-full md:mt-24">
             <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp"
-              data-te-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
-              alt="Table Full of Spices"
-              className="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
-            />
-            <button
-              onClick={() =>
-                (window.location.href =
-                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948578/8945323_4031914_xzl0a5.jpg")
-              }
-              className="w-full text-center bg-blue-500 text-white py-2 font-medium"
-            >
-              Choose template
-            </button>
-          </div>
-          <div className="w-full">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Square/1.webp"
-              data-te-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
-              alt="Coconut with Strawberries"
-              className="cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
-            />
-            <button
-              onClick={() =>
-                (window.location.href =
-                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948578/8945323_4031914_xzl0a5.jpg")
-              }
-              className="w-full text-center bg-blue-500 text-white py-2 font-medium"
-            >
-              Choose template
-            </button>
-          </div>
-        </div>
-
-        <div className="flex h-full w-full flex-1 flex-col">
-          <div className="w-full">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Vertical/1.webp"
-              data-te-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+              src="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721387/edy_11_hxcska.png"
+              data-te-img="https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721387/edy_11_hxcska.png"
               alt="Dark Roast Iced Coffee"
-              className=" w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
             />
             <button
               onClick={() =>
                 (window.location.href =
-                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1699948578/8945323_4031914_xzl0a5.jpg")
+                  "/chat?template=https://res.cloudinary.com/dw9oa2vpq/image/upload/v1701721387/edy_11_hxcska.png")
               }
               className="w-full text-center bg-blue-500 text-white py-2 font-medium"
             >
@@ -264,6 +264,7 @@ const Templates = () => {
           </div>
         </div>
       </div>
+
       {/* <div className="grid lg:grid-cols-4 gap-6 h-fit px-6 mb-6">
         <TemplateCard
           image={image}
