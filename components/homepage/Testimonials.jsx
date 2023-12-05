@@ -1,5 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
+import AJ from "@/assets/images/AJ.jpg";
+import Abu from "@/assets/images/Abu.jpg";
+import Abdul from "@/assets/images/Abdul.jpg";
 
 const Testimonials = () => {
   useEffect(() => {
@@ -30,20 +33,18 @@ const Testimonials = () => {
             >
               <img
                 className="mx-auto mb-6 rounded-full shadow-lg dark:shadow-black/20 w-[150px]"
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).jpg"
+                src={AJ.src}
                 alt="avatar"
               />
               <div className="flex flex-wrap justify-center">
                 <div className="w-full shrink-0 grow-0 basis-auto px-3 lg:w-8/12">
-                  <h5 className="mb-2 text-lg font-bold">Maria Kate</h5>
+                  <h5 className="mb-2 text-lg font-bold">AJ Dogarawa</h5>
                   <p className="mb-4 font-medium text-neutral-700 dark:text-neutral-400">
-                    Photographer
+                    NACOS President, KASU - 2022/2023
                   </p>
                   <p className="mb-6 text-neutral-500 dark:text-neutral-300">
-                    In ac turpis justo. Vivamus auctor quam vitae odio feugiat
-                    pulvinar. Sed semper ligula sed lorem tincidunt dignissim.
-                    Nam sed cursus lectus. Proin non rutrum magna. Proin
-                    gravida, justo et imperdiet tristique turpis nisi viverra.
+                    Always timely as he does all the jobs given to him to the
+                    best quality which is usually outstanding.
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 96 960 960"
@@ -127,20 +128,23 @@ const Testimonials = () => {
             >
               <img
                 className="mx-auto mb-6 rounded-full shadow-lg dark:shadow-black/20 w-[150px]"
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).jpg"
+                src={Abu.src}
                 alt="avatar"
               />
               <div className="flex flex-wrap justify-center">
                 <div className="w-full shrink-0 grow-0 basis-auto px-3 lg:w-8/12">
-                  <h5 className="mb-2 text-lg font-bold">John Doe</h5>
+                  <h5 className="mb-2 text-lg font-bold">
+                    Abubakar - NDA Kaduna
+                  </h5>
                   <p className="mb-4 font-medium text-neutral-700 dark:text-neutral-400">
-                    Web Developer
+                    Head of Operation, NDA Printing Press
                   </p>
                   <p className="mb-6 text-neutral-500 dark:text-neutral-300">
-                    Maecenas auctor, quam eget tincidunt pretium, felis diam
-                    semper turpis, sed scelerisque diam libero facilisis libero.
-                    Quisque vitae semper metus. Aliquam eu dui aliquam, faucibus
-                    metus quis, elementum nunc.
+                    Working with EdyGraphics was an absolute game-changer! Their
+                    creative prowess and attention to detail brought our vision
+                    to life. Their designs seamlessly aligned with our brand and
+                    added that extra spark of innovation. Highly recommended for
+                    anyone seeking exceptional design solutions
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 96 960 960"
@@ -224,20 +228,22 @@ const Testimonials = () => {
             >
               <img
                 className="mx-auto mb-6 rounded-full shadow-lg dark:shadow-black/20 w-[150px]"
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
+                src={Abdul.src}
                 alt="avatar"
               />
               <div className="flex flex-wrap justify-center">
                 <div className="w-full shrink-0 grow-0 basis-auto px-3 lg:w-8/12">
-                  <h5 className="mb-2 text-lg font-bold">Anna Deynah</h5>
+                  <h5 className="mb-2 text-lg font-bold">Abdulsalam </h5>
                   <p className="mb-4 font-medium text-neutral-700 dark:text-neutral-400">
-                    UX Designer
+                    Consultant
                   </p>
                   <p className="mb-6 text-neutral-500 dark:text-neutral-300">
-                    Duis sagittis, turpis in ullamcorper venenatis, ligula nibh
-                    porta dui, sit amet rutrum enim massa in ante. Curabitur in
-                    justo at lorem laoreet ultricies. Nunc ligula felis,
-                    sagittis eget nisi vitae ex arcu sit amet erat.
+                    Collaborating with EdyGraphics showcased their dedication to
+                    delivering quality work promptly. They consistently produced
+                    high-caliber designs within tight deadlines, exceeding our
+                    expectations each time. Their commitment to both timeliness
+                    and exceptional quality was evident throughout our
+                    collaboration.
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 96 960 960"
